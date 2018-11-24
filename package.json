@@ -5,12 +5,13 @@
   "author": "sizer",
   "private": true,
   "scripts": {
+    "deploy": "yarn run build && gh-pages -d dist",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "yarn run lint"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
