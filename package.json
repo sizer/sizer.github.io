@@ -5,7 +5,7 @@
   "author": "sizer",
   "private": true,
   "scripts": {
-    "deploy": "yarn run build && gh-pages -d dist",
+    "deploy": "yarn run build && gh-pages -d dist -b master",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
