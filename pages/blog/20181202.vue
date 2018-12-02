@@ -1,7 +1,8 @@
 <template>
-  <section class="container">
-    <div v-html="c20181202" />
-  </section>
+  <section
+    class="markdown-body container"
+    v-html="c20181202"
+  />
 </template>
 
 <script>
@@ -18,9 +19,16 @@ export default {
 </script>
 
 <style>
+@import './github-markdown.css';
+
 .container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  margin: 30px;
+  padding: 30px;
+}
+
+.container section {
+  width: 100%;
 }
 </style>
