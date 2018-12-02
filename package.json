@@ -5,7 +5,7 @@
   "author": "sizer",
   "private": true,
   "scripts": {
-    "deploy": "yarn run generate && gh-pages -d dist -e docs -b master",
+    "deploy": "yarn run generate && gh-pages -d dist -b master",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -14,6 +14,7 @@
     "precommit": "yarn run lint"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.2",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0"
   },
