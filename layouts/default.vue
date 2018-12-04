@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt/>
+    <div class="floating-border" />
   </div>
 </template>
 
@@ -24,32 +25,11 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.floating-border {
+  width: 100%;
+  height: 100vh;
+  border: 20px solid #222;
+  position: fixed;
+  top: 0;
 }
 </style>

@@ -43,4 +43,14 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
+
+@media (max-width: 710px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 21px;
+  }
+}
 </style>
